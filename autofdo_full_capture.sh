@@ -40,7 +40,7 @@ log_error() { printf '[ERROR %(%T)T] %s\n' -1 "$*" >&2; }
 # ---------------------------------------------------------------------------
 SRC_DIR="${SRC_DIR:-./src}"            # directory containing *.c sources
 APP_NAME="${APP_NAME:-my_app}"         # output binary base name
-WORKDIR="${WORKDIR:-./autofdo_workdir}"# PGO/BOLT artefacts; created if absent
+WORKDIR="${WORKDIR:-./autofdo_workdir}"  # PGO/BOLT artefacts; created if absent
 LOG_DIR="${LOG_DIR:-./autofdo_logs}"   # per-step log files; never removed
 PERF_RUNS="${PERF_RUNS:-3}"            # LBR sampling runs (more = richer profile)
 PERF_FREQ="${PERF_FREQ:-2999}"         # sampling Hz (prime avoids aliasing)
@@ -346,10 +346,10 @@ run_logged "step7_llvm_bolt" \
         -split-functions \
         -split-all-cold \
         -split-eh \
-        -icf=1 \
+        --icf \
         -use-gnu-stack \
         -dyno-stats \
-        -v
+        -v=1
 
 # ---------------------------------------------------------------------------
 # STEP 8: VALIDATION — perf stat comparison

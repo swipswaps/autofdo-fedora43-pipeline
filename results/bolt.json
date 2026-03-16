@@ -1,9 +1,15 @@
 {
   "label": "bolt",
-  "binary": "autofdo_workdir/my_app.bolt",
-  "timestamp": "2026-03-16T00:00:00+00:00",
+  "binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.bolt",
+  "timestamp": "2026-03-16T13:18:41.863606+00:00",
   "repeats": 7,
   "wall_time_s": null,
-  "metrics": {},
-  "_note": "Replace with output from: bash bench/benchmark_runner.sh autofdo_workdir/my_app.bolt bolt"
+  "metrics": {
+    "cycles:u": 9991756764.0,
+    "instructions:u": 16055718800.0,
+    "branch-misses:u": 22388079.0,
+    "L1-icache-load-misses:u": 482666.0,
+    "iTLB-load-misses:u": 12168.0,
+    "LLC-load-misses:u": null
+  }
 }

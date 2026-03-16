@@ -1,9 +1,15 @@
 {
   "label": "baseline",
-  "binary": "autofdo_workdir/my_app.pgo",
-  "timestamp": "2026-03-16T00:00:00+00:00",
+  "binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.pgo",
+  "timestamp": "2026-03-16T13:18:10.003571+00:00",
   "repeats": 7,
   "wall_time_s": null,
-  "metrics": {},
-  "_note": "Replace with output from: bash bench/benchmark_runner.sh autofdo_workdir/my_app.pgo baseline"
+  "metrics": {
+    "cycles:u": 10190123419.0,
+    "instructions:u": 16071716561.0,
+    "branch-misses:u": 23405850.0,
+    "L1-icache-load-misses:u": 490646.0,
+    "iTLB-load-misses:u": 13439.0,
+    "LLC-load-misses:u": null
+  }
 }

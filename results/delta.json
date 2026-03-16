@@ -1,11 +1,42 @@
 {
-  "generated": "2026-03-16T12:26:28.013048+00:00",
+  "generated": "2026-03-16T13:18:42.563830+00:00",
   "baseline_label": "baseline",
   "bolt_label": "bolt",
-  "baseline_binary": "autofdo_workdir/my_app.pgo",
-  "bolt_binary": "autofdo_workdir/my_app.bolt",
+  "baseline_binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.pgo",
+  "bolt_binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.bolt",
   "wall_time_baseline_s": null,
   "wall_time_bolt_s": null,
   "wall_time_delta_pct": null,
-  "metrics": {}
+  "metrics": {
+    "L1-icache-load-misses:u": {
+      "baseline": 490646.0,
+      "bolt": 482666.0,
+      "delta_pct": -1.63
+    },
+    "LLC-load-misses:u": {
+      "baseline": null,
+      "bolt": null,
+      "delta_pct": null
+    },
+    "branch-misses:u": {
+      "baseline": 23405850.0,
+      "bolt": 22388079.0,
+      "delta_pct": -4.35
+    },
+    "cycles:u": {
+      "baseline": 10190123419.0,
+      "bolt": 9991756764.0,
+      "delta_pct": -1.95
+    },
+    "iTLB-load-misses:u": {
+      "baseline": 13439.0,
+      "bolt": 12168.0,
+      "delta_pct": -9.46
+    },
+    "instructions:u": {
+      "baseline": 16071716561.0,
+      "bolt": 16055718800.0,
+      "delta_pct": -0.1
+    }
+  }
 }
