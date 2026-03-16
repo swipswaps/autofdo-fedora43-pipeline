@@ -1,0 +1,9 @@
+{
+  "label": "bolt",
+  "binary": "autofdo_workdir/my_app.bolt",
+  "timestamp": "2026-03-16T00:00:00+00:00",
+  "repeats": 7,
+  "wall_time_s": null,
+  "metrics": {},
+  "_note": "Replace with output from: bash bench/benchmark_runner.sh autofdo_workdir/my_app.bolt bolt"
+}

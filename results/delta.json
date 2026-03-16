@@ -1,0 +1,8 @@
+{
+  "generated": "2026-03-16T00:00:00+00:00",
+  "baseline_label": "baseline",
+  "bolt_label": "bolt",
+  "wall_time_delta_pct": null,
+  "metrics": {},
+  "_note": "Replace with output from: python3 tools/compare_results.py results/baseline.json results/bolt.json --print"
+}
