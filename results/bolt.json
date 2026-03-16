@@ -1,15 +1,15 @@
 {
   "label": "bolt",
   "binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.bolt",
-  "timestamp": "2026-03-16T13:18:41.863606+00:00",
+  "timestamp": "2026-03-16T13:24:33.746379+00:00",
   "repeats": 7,
-  "wall_time_s": null,
+  "wall_time_s": 4.09464611,
   "metrics": {
-    "cycles:u": 9991756764.0,
-    "instructions:u": 16055718800.0,
-    "branch-misses:u": 22388079.0,
-    "L1-icache-load-misses:u": 482666.0,
-    "iTLB-load-misses:u": 12168.0,
+    "cycles:u": 10143964455.0,
+    "instructions:u": 16055718735.0,
+    "branch-misses:u": 22652785.0,
+    "L1-icache-load-misses:u": 539977.0,
+    "iTLB-load-misses:u": 201432.0,
     "LLC-load-misses:u": null
   }
 }

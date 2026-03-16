@@ -1,17 +1,17 @@
 {
-  "generated": "2026-03-16T13:18:42.563830+00:00",
+  "generated": "2026-03-16T13:24:36.072825+00:00",
   "baseline_label": "baseline",
   "bolt_label": "bolt",
   "baseline_binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.pgo",
   "bolt_binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.bolt",
-  "wall_time_baseline_s": null,
-  "wall_time_bolt_s": null,
-  "wall_time_delta_pct": null,
+  "wall_time_baseline_s": 4.181896081,
+  "wall_time_bolt_s": 4.09464611,
+  "wall_time_delta_pct": -2.09,
   "metrics": {
     "L1-icache-load-misses:u": {
-      "baseline": 490646.0,
-      "bolt": 482666.0,
-      "delta_pct": -1.63
+      "baseline": 452413.0,
+      "bolt": 539977.0,
+      "delta_pct": 19.35
     },
     "LLC-load-misses:u": {
       "baseline": null,
@@ -19,23 +19,23 @@
       "delta_pct": null
     },
     "branch-misses:u": {
-      "baseline": 23405850.0,
-      "bolt": 22388079.0,
-      "delta_pct": -4.35
+      "baseline": 23278060.0,
+      "bolt": 22652785.0,
+      "delta_pct": -2.69
     },
     "cycles:u": {
-      "baseline": 10190123419.0,
-      "bolt": 9991756764.0,
-      "delta_pct": -1.95
+      "baseline": 10208043545.0,
+      "bolt": 10143964455.0,
+      "delta_pct": -0.63
     },
     "iTLB-load-misses:u": {
-      "baseline": 13439.0,
-      "bolt": 12168.0,
-      "delta_pct": -9.46
+      "baseline": 12293.0,
+      "bolt": 201432.0,
+      "delta_pct": 1538.59
     },
     "instructions:u": {
-      "baseline": 16071716561.0,
-      "bolt": 16055718800.0,
+      "baseline": 16071716578.0,
+      "bolt": 16055718735.0,
       "delta_pct": -0.1
     }
   }

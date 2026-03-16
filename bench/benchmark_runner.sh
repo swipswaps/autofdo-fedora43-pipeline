@@ -155,7 +155,11 @@ esac
 printf '[bench] Binary    : %s\n' "${TARGET_BINARY}" >&2
 printf '[bench] Label     : %s\n' "${LABEL}" >&2
 printf '[bench] Repeats   : %s\n' "${BENCH_REPEATS}" >&2
-printf '[bench] CPU core  : %s\n' "$(( _use_taskset )) && echo ${BENCH_CPU_CORE} || echo '(all cores)'" >&2
+if (( _use_taskset )); then
+    printf '[bench] CPU core  : %s\n' "${BENCH_CPU_CORE}" >&2
+else
+    printf '[bench] CPU core  : (all cores)\n' >&2
+fi
 printf '[bench] Events    : %s\n' "${#PERF_E_ARGS[@]} event(s)" >&2
 printf '[bench] Output    : %s\n' "${OUTPUT_JSON}" >&2
 
@@ -200,10 +204,6 @@ with open(perf_json_path) as fh:
     for line in fh:
         line = line.strip()
         if not line or not line.startswith('{'):
-            # Try to extract wall-clock time from the human-readable summary
-            m = re.search(r'([\d.]+)\s+seconds time elapsed', line)
-            if m:
-                wall_time = float(m.group(1))
             continue
         try:
             obj = json.loads(line)
@@ -216,6 +216,16 @@ with open(perf_json_path) as fh:
                 metrics[event] = float(count)
             except (ValueError, TypeError):
                 metrics[event] = None
+        # perf stat -j emits event-runtime (nanoseconds) on every counter line.
+        # Use the first positive value as the measurement wall-clock time.
+        runtime_ns = obj.get('event-runtime')
+        if runtime_ns is not None and wall_time is None:
+            try:
+                rt = float(runtime_ns)
+                if rt > 0:
+                    wall_time = rt / 1e9
+            except (ValueError, TypeError):
+                pass
 
 result = {
     "label":      label,

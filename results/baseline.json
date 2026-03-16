@@ -1,15 +1,15 @@
 {
   "label": "baseline",
   "binary": "/home/owner/Documents/69b7230d-3da8-8328-bd3f-8b5b1b1a01b5/autofdo_workdir/my_app.pgo",
-  "timestamp": "2026-03-16T13:18:10.003571+00:00",
+  "timestamp": "2026-03-16T13:24:03.711377+00:00",
   "repeats": 7,
-  "wall_time_s": null,
+  "wall_time_s": 4.181896081,
   "metrics": {
-    "cycles:u": 10190123419.0,
-    "instructions:u": 16071716561.0,
-    "branch-misses:u": 23405850.0,
-    "L1-icache-load-misses:u": 490646.0,
-    "iTLB-load-misses:u": 13439.0,
+    "cycles:u": 10208043545.0,
+    "instructions:u": 16071716578.0,
+    "branch-misses:u": 23278060.0,
+    "L1-icache-load-misses:u": 452413.0,
+    "iTLB-load-misses:u": 12293.0,
     "LLC-load-misses:u": null
   }
 }
