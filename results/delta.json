@@ -1,8 +1,11 @@
 {
-  "generated": "2026-03-16T00:00:00+00:00",
+  "generated": "2026-03-16T12:22:49.164028+00:00",
   "baseline_label": "baseline",
   "bolt_label": "bolt",
+  "baseline_binary": "autofdo_workdir/my_app.pgo",
+  "bolt_binary": "autofdo_workdir/my_app.bolt",
+  "wall_time_baseline_s": null,
+  "wall_time_bolt_s": null,
   "wall_time_delta_pct": null,
-  "metrics": {},
-  "_note": "Replace with output from: python3 tools/compare_results.py results/baseline.json results/bolt.json --print"
+  "metrics": {}
 }
